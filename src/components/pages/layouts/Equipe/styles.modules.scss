@@ -1,0 +1,112 @@
+.container_equipe {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+    }
+
+    .equipe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .adv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            padding: 1rem 3rem;
+
+            .adv1_foto {
+                height: 15rem;
+                width: 15rem;
+                background-image: url(../../../../assets/adv1.png);
+                box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+            }
+
+            .adv2_foto {
+                height: 15rem;
+                width: 15rem;
+                background-image: url(../../../../assets/adv2.png);
+                box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+            }
+
+            .adv3_foto {
+                height: 15rem;
+                width: 15rem;
+                background-image: url(../../../../assets/adv3.png);
+                box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+            }
+
+            p {
+                width: 20rem;
+                margin-top: 2rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        height: 45rem;
+
+        .equipe {
+
+            .text_adv {
+                height: 20rem;
+                p {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        height: auto;
+
+        .equipe {
+            flex-direction: column;
+
+            .adv {
+                flex-direction: unset;
+                gap: 3rem;
+            }
+            .text_adv {
+
+                p {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .equipe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .adv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 0.5rem;
+                gap: 1rem;
+            }
+        }
+    }
+}

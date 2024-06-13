@@ -1,0 +1,118 @@
+.main {
+    background-color: #fff;
+    padding: 2rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+    }
+
+    .container_escritorio {
+        display: flex;
+        justify-content: center;
+
+        .escritorio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .img-container {
+                width: 35rem;
+                height: 25rem;
+                overflow: hidden; /* Isso garante que a imagem não saia do contêiner */
+                border-radius: 0.3rem;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain; /* Mantém a escala da imagem */
+                }
+            }
+
+            .text_escritorio {
+                text-align: center;
+                width: 35rem;
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+        button {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.7rem;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            color: #fff;
+            background: #1670ba;
+            border: none;
+            transition: 1.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px 6px rgba(74, 181, 232, 0.4);
+            }
+        }
+    }
+
+    @media screen and (max-width: 870px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        
+        
+        h1 {
+            font-size: 3rem;
+        }
+
+        .escritorio {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        h1 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .escritorio {
+            flex-direction: column;
+
+            .img {
+                width: 99%;
+                height: auto;
+                max-width: 20rem;
+            }
+
+            .text_escritorio {
+                height: auto;
+                max-width: 24rem;
+                margin: 1rem;
+                padding: 0.5rem;
+                gap: 0.5rem;
+            }
+        }
+
+        .btn {
+            margin-top: 1.5rem;
+        }
+    }
+}

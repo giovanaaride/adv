@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .background {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 2.5rem;
+    min-height: 85vh;
+
+    .background_img {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      object-fit: contain; /* Ajuste para contain */
+      object-position: center; /* Posicionamento central */
+    }
+
+    h1 {
+      font-size: 3rem;
+      max-width: 30rem;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      .destaque {
+        color: #1670ba;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 30rem; 
+      text-align: center; 
+      margin-bottom: 1.5rem; 
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 1.7rem;
+      padding: 1.1rem 1.9rem;
+      border-radius: 0.5rem;
+      color: #fff;
+      background: #1670ba;
+      border: none;
+      transition: 1.5s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 6px rgba(74, 181, 232, 0.4);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .background {      
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .background {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        max-width: 18rem; 
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    min-height: calc(100vh - 95vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        background-image: url("../../../../assets/logo.png");
+        background-repeat: no-repeat;
+        width: 7rem;
+        height: 6rem;
+        cursor: pointer;
+    }
+}
