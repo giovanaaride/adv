@@ -1,0 +1,208 @@
+.container_especialidades {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #060b0d;
+    // background-color: #0a0a0a;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            font-size: 1.3rem;
+            margin: 1.5rem;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;
+        }
+    }
+
+    .especialidades1 {
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 3rem;
+
+        .card {
+            cursor: pointer;
+            width: 14rem;
+            height: 12rem;
+            background-color: #fff;
+            border-radius: 0.5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            transition: 0.9s;
+
+            &:hover {
+                box-shadow: 0 0 12px 4px rgba(74, 181, 232, 0.4);
+                transform: scale(1.05);
+            }
+
+            .icon {
+                font-size: 5rem;
+                margin-top: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .especialidades2 {
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 3rem;
+
+        .card {
+            cursor: pointer;
+            width: 14rem;
+            height: 12rem;
+            background-color: #fff;
+            border-radius: 0.5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            transition: 0.9s;
+
+            &:hover {
+                box-shadow: 0 0 12px 4px rgba(74, 181, 232, 0.4);
+                transform: scale(1.05);
+            }
+
+            .icon {
+                font-size: 5rem;
+                gap: 3rem;
+                margin-top: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .def {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .especialidades1 {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+
+            .card {
+                width: 15rem;
+                height: 15rem;
+
+                .icon {
+                    font-size: 5rem;
+                    margin-top: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .especialidades2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+
+            .card {
+                width: 15rem;
+                height: 15rem;
+
+                .icon {
+                    font-size: 5rem;
+                    margin-top: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .title {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+        .especialidades1 {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+
+            .card {
+                width: 8.5rem;
+                height: 8.5rem;
+
+                .icon {
+                    font-size: 4rem;
+                    margin-top: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .especialidades2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+
+            .card {
+                width: 8.5rem;
+                height: 8.5rem;
+
+                .icon {
+                    font-size: 4rem;
+                    margin-top: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

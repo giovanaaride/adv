@@ -1,0 +1,88 @@
+.container_contato {
+    height: auto; 
+    min-height: 40vh; 
+    width: 100%;
+    background-color: #060b0d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        h1 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 1rem;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: 1.7rem;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background: #1670ba;
+        border: none;
+        transition: 1.5s;
+
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 6px rgba(74, 181, 232, 0.4);
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 1rem;
+
+        .contato {
+            margin: 1rem;
+            
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .contato {
+            h1 {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.75rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        button {
+            font-size: 1.4rem;
+            padding: 1.2rem;
+        }
+    }
+}

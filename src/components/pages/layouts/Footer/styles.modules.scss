@@ -1,0 +1,39 @@
+.container_footer {
+    height: auto;
+    min-height: 15vh;
+    width: 100%;
+    background-color: #060b0d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    p {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                color: #1670ba;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
