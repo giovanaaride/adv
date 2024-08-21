@@ -6,7 +6,7 @@ function Footer() {
             <div className="footer">
                 <p>© 2020 FVA advocacia </p>
                 <p>Todos os direitos reservados.</p>
-                <p>Desenvolvido por:<a href='https://giovanaaride.vercel.app/'>Giovana Aride</a>.</p>
+                <p>Desenvolvido por:<a href='https://giovanaaride.vercel.app/' target="_blank">Giovana Aride</a>.</p>
 
             </div>
         </div>
