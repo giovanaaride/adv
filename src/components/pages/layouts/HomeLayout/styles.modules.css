@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.container .background {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  gap: 2.5rem;
+  min-height: 85vh;
+}
+.container .background .background_img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain; /* Ajuste para contain */
+  -o-object-position: center;
+     object-position: center; /* Posicionamento central */
+}
+.container .background h1 {
+  font-size: 3rem;
+  max-width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container .background h1 .destaque {
+  color: #1670ba;
+}
+.container .background p {
+  font-size: 1.1rem;
+  max-width: 30rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.container .background button {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  padding: 1.1rem 1.9rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #1670ba;
+  border: none;
+  transition: 1.5s;
+}
+.container .background button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 6px rgba(74, 181, 232, 0.4);
+}
+@media screen and (max-width: 800px) {
+  .container .background h1 {
+    font-size: 2.6rem;
+  }
+  .container .background p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .container .background button {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container .background h1 {
+    font-size: 2rem;
+  }
+  .container .background p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 18rem;
+  }
+}/*# sourceMappingURL=styles.modules.css.map */

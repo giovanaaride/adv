@@ -1,0 +1,28 @@
+.mapa {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+.mapa .container_mapa {
+  height: 100%;
+  width: 100%;
+  background-color: #eaeaea;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapa .container_mapa .leaflet-container {
+  height: 70vh;
+  width: 99%;
+}
+@media screen and (max-width: 768px) {
+  .mapa .container_mapa {
+    height: auto; /* Ajuste a altura para telas menores */
+  }
+}
+@media screen and (max-width: 576px) {
+  .mapa .container_mapa {
+    height: auto; /* Ajuste ainda mais a altura para telas ainda menores */
+  }
+}/*# sourceMappingURL=styles.modules.css.map */

@@ -1,0 +1,96 @@
+.container_equipe {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container_equipe h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.container_equipe .equipe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_equipe .equipe .adv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+}
+.container_equipe .equipe .adv .adv1_foto {
+  height: 15rem;
+  width: 15rem;
+  background-image: url(../../../../assets/adv1.png);
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.container_equipe .equipe .adv .adv2_foto {
+  height: 15rem;
+  width: 15rem;
+  background-image: url(../../../../assets/adv2.png);
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.container_equipe .equipe .adv .adv3_foto {
+  height: 15rem;
+  width: 15rem;
+  background-image: url(../../../../assets/adv3.png);
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.container_equipe .equipe .adv p {
+  width: 20rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .container_equipe {
+    height: 45rem;
+  }
+  .container_equipe .equipe .text_adv {
+    height: 20rem;
+  }
+  .container_equipe .equipe .text_adv p {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container_equipe {
+    height: auto;
+  }
+  .container_equipe .equipe {
+    flex-direction: column;
+  }
+  .container_equipe .equipe .adv {
+    flex-direction: unset;
+    gap: 3rem;
+  }
+  .container_equipe .equipe .text_adv p {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container_equipe .equipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container_equipe .equipe .adv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=styles.modules.css.map */
