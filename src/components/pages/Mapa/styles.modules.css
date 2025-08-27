@@ -18,11 +18,11 @@
 }
 @media screen and (max-width: 768px) {
   .mapa .container_mapa {
-    height: auto; /* Ajuste a altura para telas menores */
+    height: 100%; /* Ajuste a altura para telas menores */
   }
 }
 @media screen and (max-width: 576px) {
   .mapa .container_mapa {
-    height: auto; /* Ajuste ainda mais a altura para telas ainda menores */
+    height: 100%; /* Ajuste ainda mais a altura para telas ainda menores */
   }
 }/*# sourceMappingURL=styles.modules.css.map */
